@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NHR - Neutralizer of Harmful Radiation</title>
+  <meta name="description" content="NHR nalepnica smanjuje SAR zračenje telefona za preko 50% bez uticaja na signal. Laboratorijski testirano u Institutu za opštu i fizičku hemiju u Beogradu."/>
+  <meta property="og:title" content="NHR - Neutralizer of Harmful Radiation"/>
+  <meta property="og:description" content="Smanjite SAR zračenje telefona za preko 50% bez uticaja na signal. Laboratorijski testirano - IOFH Beograd."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="sr_RS"/>
+  <meta property="og:url" content="https://www.nhrprotect.com/"/>
+  <meta property="og:image" content="https://www.nhrprotect.com/og-image.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="canonical" href="https://www.nhrprotect.com/"/>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/></noscript>
+  <style>
+    :root {
+      --teal: #1a9e8f;
+      --teal-light: #e6f7f5;
+      --teal-dark: #137a6e;
+      --gold: #c9a84c;
+      --bg: #f7f8f6;
+      --white: #ffffff;
+      --text: #1a1e1c;
+      --muted: #3d4442;
+      --border: #e2e6e4;
+      --card-shadow: 0 4px 24px rgba(26,158,143,0.08), 0 1px 4px rgba(0,0,0,0.05);
+      --radius: 16px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(247,248,246,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5vw;
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem; color: var(--text);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .logo-name { line-height: 1; }
+    .logo-sub { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 400; color: var(--muted); letter-spacing: 0.04em; text-transform: lowercase; }
+    .logo-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--teal); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      text-decoration: none; color: var(--muted);
+      font-size: 0.9rem; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-cta {
+      background: var(--teal); color: #fff;
+      border: none; border-radius: 50px;
+      padding: 7px 16px; font-size: 0.8rem;
+      font-weight: 600; cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .nav-cta:hover { background: var(--teal-dark); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 1100px; margin: 0 auto;
+      padding: 90px 5vw 70px;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--teal-light); color: var(--teal-dark);
+      border-radius: 50px; padding: 5px 14px;
+      font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.04em; margin-bottom: 20px;
+    }
+    .hero-tag::before {
+      content: ''; display: inline-block;
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--teal); animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.15; color: var(--text);
+      margin-bottom: 20px;
+    }
+    h1 em { font-style: italic; color: var(--teal); }
+    .hero-sub {
+      color: var(--muted); font-size: 1.05rem;
+      max-width: 460px; margin-bottom: 36px; font-weight: 300;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--teal); color: #fff;
+      border: none; border-radius: 50px;
+      padding: 14px 32px; font-size: 0.95rem;
+      font-weight: 600; cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(26,158,143,0.3);
+    }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(26,158,143,0.4); }
+    .btn-secondary {
+      background: transparent; color: var(--text);
+      border: 1.5px solid var(--border); border-radius: 50px;
+      padding: 14px 28px; font-size: 0.95rem;
+      font-weight: 500; cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--teal); color: var(--teal); }
+
+    /* ── PHONE MOCKUP ── */
+    .hero-visual { position: relative; display: flex; justify-content: center; align-items: center; }
+    .phone-wrap { position: relative; }
+    .phone {
+      width: 220px; height: 440px;
+      background: linear-gradient(160deg, #2c2c2e, #1a1a1c);
+      border-radius: 38px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.22), 0 0 0 1px rgba(255,255,255,0.08) inset,
+                  inset 0 1px 0 rgba(255,255,255,0.15);
+      position: relative; overflow: hidden;
+    }
+    .phone::before {
+      content: ''; position: absolute;
+      top: 10px; left: 50%; transform: translateX(-50%);
+      width: 70px; height: 10px;
+      background: #111; border-radius: 20px;
+    }
+    .phone-screen {
+      position: absolute; inset: 16px;
+      background: linear-gradient(135deg, #e8f5f3, #d0eeea);
+      border-radius: 26px; overflow: hidden;
+    }
+    .phone-screen::after {
+      content: '✦ NHR'; position: absolute;
+      bottom: 20px; left: 50%; transform: translateX(-50%);
+      white-space: nowrap; font-size: 0.65rem; font-weight: 600;
+      color: var(--teal-dark); letter-spacing: 0.08em;
+    }
+    .sticker {
+      position: absolute; bottom: -10px; right: -20px;
+      width: 90px; height: 90px;
+      background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+      border-radius: 50%; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      box-shadow: 0 8px 24px rgba(26,158,143,0.4);
+      color: #fff; font-size: 0.55rem; font-weight: 700;
+      letter-spacing: 0.04em; text-align: center;
+      border: 3px solid #fff;
+      animation: float 3s ease-in-out infinite;
+    }
+    .sticker strong { font-size: 1.1rem; line-height: 1; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .badge {
+      position: absolute; background: #fff;
+      border-radius: 50px; padding: 8px 14px;
+      box-shadow: var(--card-shadow); font-size: 0.78rem;
+      font-weight: 600; display: flex; align-items: center; gap: 6px;
+      white-space: nowrap;
+    }
+    .badge-sar { top: 30px; right: -60px; color: var(--teal-dark); }
+    .badge-signal { bottom: 60px; left: -70px; color: var(--muted); }
+    .badge-icon { font-size: 1rem; }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 5vw;
+    }
+    .stats-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .stat { text-align: center; }
+    @media (max-width: 600px) {
+      .stats-inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 12px;
+      }
+    }
+    .stat-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem; color: var(--teal);
+    }
+    .stat-label { font-size: 0.82rem; color: var(--muted); font-weight: 500; }
+
+    /* ── SECTIONS ── */
+    section { padding: 80px 5vw; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-tag {
+      font-size: 0.78rem; font-weight: 700;
+      color: var(--teal-dark); letter-spacing: 0.1em;
+      text-transform: uppercase; margin-bottom: 12px;
+    }
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.2; margin-bottom: 16px;
+    }
+    .section-sub {
+      color: var(--muted); font-size: 1rem;
+      max-width: 560px; font-weight: 300; margin-bottom: 48px;
+    }
+
+    /* ── PROBLEM ── */
+    .problem-bg { background: var(--white); }
+    .problem-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px; margin-top: 48px;
+    }
+    .problem-card {
+      background: var(--bg);
+      border-radius: var(--radius); padding: 28px;
+      border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .problem-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow); }
+    .problem-icon { font-size: 2rem; margin-bottom: 14px; }
+    .problem-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+    .problem-card p { font-size: 0.88rem; color: var(--muted); }
+
+    /* ── HOW ── */
+    .how-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: stretch; margin-top: 48px;
+    }
+    .steps { display: flex; flex-direction: column; justify-content: space-between; gap: 20px; }
+    .step {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: var(--white); border-radius: var(--radius);
+      padding: 20px 24px; border: 1px solid var(--border);
+      transition: border-color 0.2s;
+    }
+    .step:hover { border-color: var(--teal); }
+    .step-num {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--teal); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
+    }
+    .step-content h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; }
+    .step-content p { font-size: 0.85rem; color: var(--muted); }
+
+    .health-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 16px; margin-top: 32px;
+    }
+    .health-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 24px; border: 1px solid var(--border);
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .health-card:hover { border-color: var(--teal); transform: translateY(-2px); }
+    .health-icon { font-size: 1.8rem; margin-bottom: 12px; }
+    .health-card h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--ink); }
+    .health-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.55; }
+    @media (max-width: 720px) {
+      .health-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── RESULTS TABLE ── */
+    .results-bg { background: var(--white); }
+    .results-table {
+      width: 100%; border-collapse: collapse; margin-top: 40px;
+      border-radius: var(--radius); overflow: hidden;
+      box-shadow: var(--card-shadow);
+    }
+    .results-table th {
+      background: var(--teal); color: #fff;
+      padding: 12px 14px; text-align: left;
+      font-size: 0.82rem; font-weight: 600;
+    }
+    .results-table td {
+      padding: 11px 14px; border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    @media (max-width: 768px) {
+      .results-table th { padding: 10px 10px; font-size: 0.75rem; }
+      .results-table td { padding: 9px 10px; font-size: 0.78rem; }
+    }
+    .results-table tr:last-child td { border-bottom: none; }
+    .results-table tr:nth-child(even) td { background: var(--bg); }
+    .tag-green {
+      background: #dcf5f1; color: var(--teal-dark);
+      border-radius: 50px; padding: 3px 10px;
+      font-size: 0.78rem; font-weight: 700;
+    }
+    .tag-stable {
+      background: #e8f0fe; color: #3b5bdb;
+      border-radius: 50px; padding: 3px 10px;
+      font-size: 0.78rem; font-weight: 700;
+    }
+    .table-note {
+      font-size: 0.8rem; color: var(--muted);
+      margin-top: 14px; font-style: italic;
+    }
+
+    /* ── WHY ── */
+    .why-cards {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-top: 48px;
+    }
+    .why-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 28px; border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .why-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow); border-color: var(--teal); }
+    .why-icon { font-size: 1.8rem; margin-bottom: 14px; }
+    .why-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+    .why-card p { font-size: 0.88rem; color: var(--muted); }
+
+    /* ── TESTIMONIALS ── */
+    .testi-bg { background: var(--white); }
+    .testi-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-top: 48px;
+    }
+    .testi-card {
+      background: var(--bg); border-radius: var(--radius);
+      padding: 28px; border: 1px solid var(--border);
+    }
+    .stars { color: var(--gold); font-size: 0.95rem; margin-bottom: 12px; }
+    .testi-card p { font-size: 0.9rem; color: var(--text); margin-bottom: 16px; font-style: italic; }
+    .testi-author { font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: linear-gradient(135deg, var(--teal-dark), var(--teal));
+      padding: 80px 5vw; text-align: center;
+    }
+    .cta-section h2 { color: #fff; font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem,3vw,2.8rem); margin-bottom: 16px; }
+    .cta-section p { color: rgba(255,255,255,0.82); font-size: 1rem; max-width: 500px; margin: 0 auto 36px; }
+    .btn-white {
+      background: #fff; color: var(--teal-dark);
+      border: none; border-radius: 50px;
+      padding: 16px 40px; font-size: 1rem;
+      font-weight: 700; cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+    .cta-note { color: rgba(255,255,255,0.65); font-size: 0.82rem; margin-top: 14px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--text); color: rgba(255,255,255,0.5);
+      padding: 36px 5vw; text-align: center;
+      font-size: 0.83rem;
+    }
+    footer strong { color: #fff; }
+
+    /* ── ACCESSIBILITY ── */
+    .skip-link {
+      position: absolute; top: -100px; left: 16px;
+      background: var(--teal); color: #fff;
+      padding: 10px 20px; border-radius: 0 0 8px 8px;
+      font-weight: 600; font-size: 0.9rem;
+      text-decoration: none; z-index: 9999;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; outline: 3px solid #fff; outline-offset: 2px; }
+    *:focus-visible {
+      outline: 3px solid var(--teal);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    button:focus-visible, a:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+
+    /* ── ANIMATIONS ── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+
+    /* ── LANG SWITCHER ── */
+    .lang-switch {
+      display: flex; align-items: center; gap: 4px;
+      background: var(--border); border-radius: 50px;
+      padding: 3px; margin-right: 10px;
+    }
+    .lang-btn {
+      background: none; border: none; border-radius: 50px;
+      padding: 4px 10px; font-size: 0.78rem; font-weight: 700;
+      cursor: pointer; font-family: 'DM Sans', sans-serif;
+      color: var(--muted); transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: #fff; color: var(--text);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    }
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .hero-sub { max-width: 100%; }
+      .hero-actions { justify-content: center; }
+      .hero-visual { display: none; }
+      .problem-grid, .why-cards, .testi-grid { grid-template-columns: 1fr; }
+      .how-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<a href="#main-content" class="skip-link" data-sr="Preskoči na sadržaj" data-en="Skip to content">Preskoči na sadržaj</a>
+<nav role="navigation" aria-label="Glavna navigacija" data-sr-label="Glavna navigacija" data-en-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-dot"></span>
+      <span>
+        <div class="logo-name">NHR</div>
+        <div class="logo-sub">neutralizer of harmful radiation</div>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#kako-radi" data-sr="Kako radi" data-en="How it works">Kako radi</a></li>
+      <li><a href="#" onclick="openPdfModal();return false;" data-sr="Rezultati" data-en="Results">Rezultati</a></li>
+      <li><a href="#zasto" data-sr="Zašto mi" data-en="Why us">Zašto mi</a></li>
+    </ul>
+    <div class="lang-switch" role="group" aria-label="Izbor jezika">
+      <button class="lang-btn active" id="btn-sr" onclick="setLang('sr')" aria-pressed="true">SR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
+    </div>
+    <button class="nav-cta" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})" aria-label="Naruči NHR" data-sr="Naruči" data-en="Order">Naruči</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<main id="main-content">
+<div class="hero fade-in">
+  <div class="hero-text">
+    <div class="hero-tag" data-sr="Sertifikovana zaštita · SAR redukcija" data-en="Certified protection · SAR reduction">Sertifikovana zaštita · SAR redukcija</div>
+    <h1 data-sr="Tvoj telefon emituje više nego što misliš." data-en="Your phone emits more than you think.">Tvoj telefon<br/>emituje <em>više</em><br/>nego što misliš.</h1>
+    <p class="hero-sub" data-sr="NHR nalepnica smanjuje SAR vrednost elektromagnetnog zračenja za više od 50%, bez uticaja na signal ili performanse uređaja." data-en="The NHR sticker reduces the SAR value of electromagnetic radiation by over 50%, without affecting signal or device performance.">NHR nalepnica smanjuje SAR vrednost elektromagnetnog zračenja za više od 50%, bez uticaja na signal ili performanse uređaja.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})" aria-label="Naruči odmah" data-sr="Naruči odmah" data-en="Order now">Naruči odmah</button>
+      <button class="btn-secondary" onclick="openPdfModal()" data-sr="Vidi rezultate" data-en="View results">Vidi rezultate</button>
+      <button class="btn-secondary" onclick="openPdfModal2()" data-sr="Zdravstvena ispravnost" data-en="Health safety">Zdravstvena ispravnost</button>
+    </div>
+  </div>
+  <div class="hero-visual">
+        <div class="phone-wrap">
+      <div class="phone">
+        <div class="phone-screen"></div>
+      </div>
+      <div class="sticker"><strong>&gt;50%</strong><br/>SAR<br/>redukcija</div>
+      <div class="badge badge-sar"><span class="badge-icon">📡</span> Signal nepromenjen</div>
+      <div class="badge badge-signal"><span class="badge-icon">🛡️</span> Aktivna zaštita</div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar fade-in" style="position:relative;overflow:hidden;">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num">&gt;50%</div>
+      <div class="stat-label" data-sr="Smanjenje SAR vrednosti" data-en="SAR value reduction">Smanjenje SAR vrednosti</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">0%</div>
+      <div class="stat-label" data-sr="Uticaj na signal" data-en="Signal impact">Uticaj na signal</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-sr="15 sek" data-en="15 sec">15 sek</div>
+      <div class="stat-label" data-sr="Montaža" data-en="Installation">Montaža</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">5+</div>
+      <div class="stat-label" data-sr="Godina trajanja" data-en="Years durability">Godina trajanja</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="problem-bg" aria-labelledby="problem-heading" style="position:relative;overflow:hidden;">
+  <div class="section-inner fade-in">
+    <div class="section-tag" aria-hidden="true" data-sr="Problem" data-en="Problem">Problem</div>
+    <h2 id="problem-heading" data-sr="Elektromagnetno" data-en="Electromagnetic">Elektromagnetno zračenje<br/>je svuda oko nas</h2>
+    <p class="section-sub" data-sr="Moderni telefoni emituju elektromagnetne talase svaki put kada šalju ili primaju signal a mi ih držimo neposredno uz telo, satima dnevno." data-en="Modern phones emit electromagnetic waves every time they send or receive a signal, and we hold them close to our bodies for hours every day.">Moderni telefoni emituju elektromagnetne talase svaki put kada šalju ili primaju signal a mi ih držimo neposredno uz telo, satima dnevno.</p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">📱</div>
+        <h3 data-sr="Stalna izloženost" data-en="Constant exposure">Stalna izloženost</h3>
+        <p data-sr="Prosečan korisnik drži telefon uz telo više od 4 sata dnevno, što znači kontinuirano izlaganje EMF zračenju." data-en="The average user keeps their phone close to their body for more than 4 hours a day, meaning continuous EMF exposure.">Prosečan korisnik drži telefon uz telo više od 4 sata dnevno, što znači kontinuirano izlaganje EMF zračenju.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🌡️</div>
+        <h3 data-sr="SAR vrednosti" data-en="SAR values">SAR vrednosti</h3>
+        <p data-sr="SAR (Specific Absorption Rate) meri koliko energije telo apsorbuje. Mnogi popularni modeli imaju visoke SAR vrednosti." data-en="SAR (Specific Absorption Rate) measures how much energy the body absorbs. Many popular phone models have high SAR values.">SAR (Specific Absorption Rate) meri koliko energije telo apsorbuje. Mnogi popularni modeli imaju visoke SAR vrednosti.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🔬</div>
+        <h3 data-sr="Naučna istraživanja" data-en="Scientific research">Naučna istraživanja</h3>
+        <p data-sr="Sve više studija ukazuje na potencijalne zdravstvene efekte dugotrajnog izlaganja EMF zračenju." data-en="A growing number of studies point to potential health effects of long-term EMF exposure.">Sve više studija ukazuje na potencijalne zdravstvene efekte dugotrajnog izlaganja EMF zračenju.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="kako-radi" aria-labelledby="kako-heading">
+  <div class="section-inner fade-in">
+    <div class="section-tag" data-sr="Rešenje" data-en="Solution">Rešenje</div>
+    <h2 id="kako-heading" data-sr="Kako NHR radi?" data-en="How does NHR work?">Kako NHR radi?</h2>
+    <p class="section-sub" data-sr="Naša nalepnica koristi patentiranu tehnologiju pasivnog preusmeravanja elektromagnetnih talasa." data-en="Our sticker uses patented passive electromagnetic wave redirection technology.">Naša nalepnica koristi patentiranu tehnologiju pasivnog preusmeravanja elektromagnetnih talasa.</p>
+    <div class="how-grid">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3 data-sr="Pasivno preusmeravanje" data-en="Passive redirection">Pasivno preusmeravanje</h3>
+            <p data-sr="Specijalna legura unutar nalepnice preusmerava deo EMF talasa dalje od tela korisnika." data-en="A special alloy inside the sticker redirects part of the EMF waves away from the user's body.">Specijalna legura unutar nalepnice preusmerava deo EMF talasa dalje od tela korisnika.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3 data-sr="Bez uticaja na signal" data-en="No signal impact">Bez uticaja na signal</h3>
+            <p data-sr="Za razliku od zaštitnih torbica, nalepnica ne blokira signal. Telefon radi normalno." data-en="Unlike protective cases, the sticker does not block the signal. The phone works normally.">Za razliku od zaštitnih torbica, nalepnica ne blokira signal. Telefon radi normalno.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3 data-sr="Merljivi rezultati" data-en="Measurable results">Merljivi rezultati</h3>
+            <p data-sr="Efikasnost je potvrđena nezavisnim laboratorijskim testovima sa SAR mernim uređajima." data-en="Effectiveness has been confirmed by independent laboratory tests using SAR measuring devices.">Efikasnost je potvrđena nezavisnim laboratorijskim testovima sa SAR mernim uređajima.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3 data-sr="Jednostavna montaža" data-en="Easy installation">Jednostavna montaža</h3>
+            <p data-sr="Nalepnica se lepi na poleđinu telefona ili futrole. Trajno rešenje bez ikakvih podešavanja." data-en="The sticker attaches to the back of the phone or case. A permanent solution with no adjustments needed.">Nalepnica se lepi na poleđinu telefona ili futrole. Trajno rešenje bez ikakvih podešavanja.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background: linear-gradient(135deg, var(--teal-light), #fff); border-radius: 24px; display:flex; align-items:stretch; justify-content:center; min-height:100%; box-shadow: var(--card-shadow); overflow: hidden; padding: 24px;"><div style="display:flex; flex-direction:column; justify-content:space-between; gap:16px; width:100%; padding:8px;">
+          <img src="data:image/webp;base64,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" alt="NHR pin u kutiji" style="width: 100%; object-fit: contain; border-radius: 12px;"/>
+          <img src="data:image/webp;base64,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" alt="NHR privezak u kutiji" style="width: 100%; object-fit: contain; border-radius: 12px;"/>
+        </div>
+</div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results-bg" id="rezultati" aria-labelledby="rezultati-heading">
+  <div class="section-inner fade-in">
+    <div class="section-tag" data-sr="Mereni rezultati" data-en="Measured results">Mereni rezultati</div>
+    <h2 id="rezultati-heading" data-sr="Laboratorijski potvrđena efikasnost" data-en="Laboratory confirmed effectiveness">Laboratorijski<br/>potvrđena efikasnost</h2>
+    <p class="section-sub" data-sr="Nezavisni testovi sprovedeni na popularnim modelima pametnih telefona." data-en="Independent tests conducted on popular smartphone models.">Nezavisni testovi sprovedeni na popularnim modelima pametnih telefona.</p>
+    <table class="results-table" role="table" aria-label="SAR merenja za mobilne telefone">
+      <thead>
+        <tr>
+          <th data-sr="Model telefona" data-en="Phone model">Model telefona</th>
+          <th data-sr="SAR bez zaštite" data-en="SAR without protection">SAR bez zaštite</th>
+          <th data-sr="SAR sa NHR" data-en="SAR with NHR">SAR sa NHR</th>
+          <th data-sr="Smanjenje" data-en="Reduction">Smanjenje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>iPhone 14 Pro</strong></td>
+          <td>1.46 W/kg</td>
+          <td>0.68 W/kg</td>
+          <td><span class="tag-green">−53%</span></td>
+        </tr>
+        <tr>
+          <td><strong>Samsung Galaxy S23</strong></td>
+          <td>1.38 W/kg</td>
+          <td>0.62 W/kg</td>
+          <td><span class="tag-green">−55%</span></td>
+        </tr>
+        <tr>
+          <td><strong>Xiaomi 13</strong></td>
+          <td>1.42 W/kg</td>
+          <td>0.65 W/kg</td>
+          <td><span class="tag-green">−54%</span></td>
+        </tr>
+        <tr>
+          <td><strong>Google Pixel 7</strong></td>
+          <td>1.19 W/kg</td>
+          <td>0.54 W/kg</td>
+          <td><span class="tag-green">−55%</span></td>
+        </tr>
+        <tr>
+          <td><strong>Huawei P50</strong></td>
+          <td>1.33 W/kg</td>
+          <td>0.61 W/kg</td>
+          <td><span class="tag-green">−54%</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="table-note" data-sr="* Testovi sprovedeni u akreditovanoj laboratoriji. EU limit za SAR iznosi 2.0 W/kg." data-en="* Tests conducted in an accredited laboratory. EU SAR limit is 2.0 W/kg.">* Testovi sprovedeni u akreditovanoj laboratoriji. EU limit za SAR iznosi 2.0 W/kg.</p>
+  </div>
+</section>
+
+<!-- HEALTH SAFETY -->
+<section id="zdravstvena" aria-labelledby="zdravstvena-heading">
+  <div class="section-inner fade-in">
+    <div class="section-tag" data-sr="Zdravstvena ispravnost" data-en="Health safety">Zdravstvena ispravnost</div>
+    <h2 id="zdravstvena-heading" data-sr="Zdravstveno bezbedan proizvod" data-en="Health-safe product">Zdravstveno<br/>bezbedan proizvod</h2>
+    <p class="section-sub" data-sr="Institut za opštu i fizičku hemiju u Beogradu potvrdio je da NHR ne sadrži štetne supstance i da je u potpunosti bezbedan za svakodnevnu upotrebu." data-en="The Institute of General and Physical Chemistry in Belgrade confirmed that NHR contains no harmful substances and is fully safe for daily use.">Institut za opštu i fizičku hemiju u Beogradu potvrdio je da NHR ne sadrži štetne supstance i da je u potpunosti bezbedan za svakodnevnu upotrebu.</p>
+    <div class="health-grid">
+      <div class="health-card">
+        <div class="health-icon">⚗️</div>
+        <h3 data-sr="Bez teških metala" data-en="No heavy metals">Bez teških metala</h3>
+        <p data-sr="Olovo, kadmijum, hrom, nikl, arsen i živa - svi ispod granice detekcije (&lt;0.5 mg/kg)." data-en="Lead, cadmium, chromium, nickel, arsenic and mercury - all below detection limit (&lt;0.5 mg/kg).">Olovo, kadmijum, hrom, nikl, arsen i živa - svi ispod granice detekcije (&lt;0.5 mg/kg).</p>
+      </div>
+      <div class="health-card">
+        <div class="health-icon">🦠</div>
+        <h3 data-sr="Mikrobiološki bezbedan" data-en="Microbiologically safe">Mikrobiološki bezbedan</h3>
+        <p data-sr="Bez Staphylococcus aureus, Pseudomonas, E. coli i Candida albicans prema SRPS EN ISO standardima." data-en="No Staphylococcus aureus, Pseudomonas, E. coli or Candida albicans per SRPS EN ISO standards.">Bez Staphylococcus aureus, Pseudomonas, E. coli i Candida albicans prema SRPS EN ISO standardima.</p>
+      </div>
+      <div class="health-card">
+        <div class="health-icon">🧪</div>
+        <h3 data-sr="Bez CMR supstanci" data-en="No CMR substances">Bez CMR supstanci</h3>
+        <p data-sr="Ne sadrži kancerogene, mutagene ili reproduktivno toksične supstance. Ukupna migracija 0.0 mg/dm²." data-en="Contains no carcinogenic, mutagenic or reproductively toxic substances. Total migration 0.0 mg/dm².">Ne sadrži kancerogene, mutagene ili reproduktivno toksične supstance. Ukupna migracija 0.0 mg/dm².</p>
+      </div>
+      <div class="health-card">
+        <div class="health-icon">✅</div>
+        <h3 data-sr="Zvaničan zaključak" data-en="Official conclusion">Zvaničan zaključak</h3>
+        <p data-sr="Proizvod je zdravstveno ispravan u smislu Zakona o predmetima opšte upotrebe (Sl. glasnik RS 92/2011, 25/2019, 14/2022)." data-en="The product is health-safe under the Law on General Use Items (Official Gazette RS 92/2011, 25/2019, 14/2022).">Proizvod je zdravstveno ispravan u smislu Zakona o predmetima opšte upotrebe (Sl. glasnik RS 92/2011, 25/2019, 14/2022).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="zasto" aria-labelledby="zasto-heading">
+  <div class="section-inner fade-in">
+    <div class="section-tag" data-sr="Zašto NHR" data-en="Why NHR">Zašto NHR</div>
+    <h2 id="zasto-heading" data-sr="Zaštita kojoj možeš da veruješ" data-en="Protection you can trust">Zaštita kojoj<br/>možeš da veruješ</h2>
+    <p class="section-sub" data-sr="Nismo prvi koji nude EMF zaštitu, ali smo jedni od retkih koji su je naučno potvrdili." data-en="We are not the first to offer EMF protection, but we are among the few who have scientifically proven it.">Nismo prvi koji nude EMF zaštitu, ali smo jedni od retkih koji su je naučno potvrdili.</p>
+    <div class="why-cards">
+      <div class="why-card">
+        <div class="why-icon">🔬</div>
+        <h3 data-sr="Naučno potvrđeno" data-en="Scientifically proven">Naučno potvrđeno</h3>
+        <p data-sr="Svi rezultati su potvrđeni od strane nezavisnih akreditovanih laboratorija." data-en="All results are confirmed by independent accredited laboratories.">Svi rezultati su potvrđeni od strane nezavisnih akreditovanih laboratorija.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🇷🇸</div>
+        <h3 data-sr="Domaće poreklo" data-en="Local origin">Domaće poreklo</h3>
+        <p data-sr="Razvijeno i testirano u Srbiji. Podržavamo domaću nauku i industriju." data-en="Developed and tested in Serbia. We support local science and industry.">Razvijeno i testirano u Srbiji. Podržavamo domaću nauku i industriju.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3 data-sr="Bez kompromisa" data-en="No compromises">Bez kompromisa</h3>
+        <p data-sr="Signal ostaje isti. Baterija se ne troši brže. Telefon radi potpuno normalno." data-en="Signal stays the same. Battery doesn't drain faster. Phone works completely normally.">Signal ostaje isti. Baterija se ne troši brže. Telefon radi potpuno normalno.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💎</div>
+        <h3 data-sr="Premijum materijali" data-en="Premium materials">Premijum materijali</h3>
+        <p data-sr="Nalepnica je izrađena od kvalitetnih materijala. Trajnost minimum 5 godina." data-en="The sticker is made of quality materials. Minimum durability of 5 years.">Nalepnica je izrađena od kvalitetnih materijala. Trajnost minimum 5 godina.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📦</div>
+        <h3 data-sr="Brza dostava" data-en="Fast delivery">Brza dostava</h3>
+        <p data-sr="Isporuka širom Srbije za 1-3 radna dana. Mogućnost plaćanja pouzećem." data-en="Delivery across Serbia within 1-3 business days. Cash on delivery available.">Isporuka širom Srbije za 1-3 radna dana. Mogućnost plaćanja pouzećem.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🔄</div>
+        <h3 data-sr="Garancija povrata" data-en="Money-back guarantee">Garancija povrata</h3>
+        <p data-sr="Niste zadovoljni? Vraćamo novac bez pitanja u roku od 30 dana." data-en="Not satisfied? We refund your money, no questions asked, within 30 days.">Niste zadovoljni? Vraćamo novac bez pitanja u roku od 30 dana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+  <div style="display:inline-block;background:rgba(255,255,255,0.2);color:#fff;padding:6px 16px;border-radius:50px;font-size:0.78rem;font-weight:600;letter-spacing:0.5px;margin-bottom:20px;" data-sr="USKORO U PRODAJI" data-en="COMING SOON">USKORO U PRODAJI</div>
+  <h2 data-sr="Zaštiti sebe i svoju porodicu" data-en="Protect yourself and your family">Zaštiti sebe i<br/>svoju porodicu</h2>
+  <p data-sr="Radimo na lansiranju. Uskoro stiže jednostavna i efektivna zaštita od elektromagnetnog zračenja." data-en="We are working on the launch. Simple and effective protection from electromagnetic radiation is coming soon.">Radimo na lansiranju. Uskoro stiže jednostavna i efektivna zaštita od elektromagnetnog zračenja.</p>
+  <p class="cta-note" data-sr="📦 Dostava 1-3 radna dana · 💳 Plaćanje pouzećem · 🔄 30 dana garancija povrata" data-en="📦 Delivery 1-3 business days · 💳 Cash on delivery · 🔄 30-day money-back guarantee">📦 Dostava 1-3 radna dana · 💳 Plaćanje pouzećem · 🔄 30 dana garancija povrata</p>
+</section>
+
+</main>
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <p><strong>NHR</strong> · Neutralizer of Harmful Radiation</p>
+  <div style="margin-top:16px; display:flex; flex-wrap:wrap; justify-content:center; gap:32px; font-size:0.85rem;">
+    <div>
+      <p style="margin:0; color:#fff; font-weight:600;">Žarko Blagojević</p>
+      <p style="margin:2px 0 0;"><a href="mailto:zarko965@gmail.com" style="color:inherit;">zarko965@gmail.com</a></p>
+      <p style="margin:2px 0 0;"><a href="tel:+381652287430" style="color:inherit;">065 228 7430</a></p>
+    </div>
+    <div>
+      <p style="margin:0; color:#fff; font-weight:600;">Miloš Nikolić</p>
+      <p style="margin:2px 0 0;"><a href="mailto:mnikolic.rs@gmail.com" style="color:inherit;">mnikolic.rs@gmail.com</a></p>
+      <p style="margin:2px 0 0;"><a href="tel:+38163370679" style="color:inherit;">063 370 679</a></p>
+    </div>
+  </div>
+  <p style="margin-top:16px" data-sr="© 2026 NHR. Sva prava zadržana." data-en="© 2026 NHR. All rights reserved.">© 2026 NHR. Sva prava zadržana.</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+
+<!-- PDF MODAL -->
+<div id="pdf-modal-2" role="dialog" aria-modal="true" aria-label="Izveštaj o zdravstvenoj ispravnosti" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="width:90%;max-width:780px;height:90vh;background:#fff;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#1a1e1c;flex-shrink:0;">
+      <span style="color:#fff;font-size:0.88rem;font-weight:600;">Izveštaj o zdravstvenoj ispravnosti - IOFH</span>
+      <button onclick="document.getElementById('pdf-modal-2').style.display='none'" style="background:none;border:none;color:#fff;font-size:1.8rem;cursor:pointer;line-height:1;padding:0 4px;" aria-label="Zatvori PDF">×</button>
+    </div>
+    <div id="pdf-container-2" style="flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;-webkit-overflow-scrolling:touch;background:#f0f0f0;">
+      <p id="pdf-loading-2" style="color:#333;text-align:center;margin-top:40px;font-size:1rem;">Učitavanje...</p>
+    </div>
+  </div>
+</div>
+
+<div id="pdf-modal" role="dialog" aria-modal="true" aria-label="Laboratorijski izveštaj IOFH" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="width:90%;max-width:780px;height:90vh;background:#fff;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#1a1e1c;flex-shrink:0;">
+      <span style="color:#fff;font-size:0.88rem;font-weight:600;">Laboratorijski izveštaj - IOFH</span>
+      <button onclick="document.getElementById('pdf-modal').style.display='none'" style="background:none;border:none;color:#fff;font-size:1.8rem;cursor:pointer;line-height:1;padding:0 4px;" aria-label="Zatvori PDF">×</button>
+    </div>
+    <div id="pdf-container" style="flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;-webkit-overflow-scrolling:touch;background:#f0f0f0;">
+      <p id="pdf-loading" style="color:#333;text-align:center;margin-top:40px;font-size:1rem;">Učitavanje...</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    var modal = document.getElementById('pdf-modal');
+    if (modal && modal.style.display !== 'none') modal.style.display = 'none';
+    var modal2 = document.getElementById('pdf-modal-2');
+    if (modal2 && modal2.style.display !== 'none') modal2.style.display = 'none';
+  }
+});
+
+/* PDF.js se lazy-loaduje tek kad korisnik otvori modal — nula bajtova pri prvom ucitavanju stranice */
+var PDFJS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+var PDFJS_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+var pdfJsPromise = null;
+
+function loadPdfJs() {
+  if (window.pdfjsLib) {
+    window.pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
+    return Promise.resolve(window.pdfjsLib);
+  }
+  if (!pdfJsPromise) {
+    pdfJsPromise = new Promise(function(resolve, reject) {
+      var s = document.createElement('script');
+      s.src = PDFJS_URL;
+      s.onload = function() {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
+        resolve(window.pdfjsLib);
+      };
+      s.onerror = function() {
+        pdfJsPromise = null;
+        reject(new Error('PDF.js se nije ucitao'));
+      };
+      document.head.appendChild(s);
+    });
+  }
+  return pdfJsPromise;
+}
+
+var pdfRenderedState = {};
+
+function renderPdfInto(containerId, pdfUrl) {
+  if (pdfRenderedState[containerId]) return;
+  pdfRenderedState[containerId] = true;
+  var container = document.getElementById(containerId);
+
+  loadPdfJs().then(function(pdfjsLib) {
+    return pdfjsLib.getDocument(pdfUrl).promise;
+  }).then(function(pdf) {
+    container.innerHTML = '';
+    var total = pdf.numPages;
+    for (var p = 1; p <= total; p++) {
+      (function(pageNum) {
+        pdf.getPage(pageNum).then(function(page) {
+          var defaultVp = page.getViewport({ scale: 1 });
+          var isMobile = window.innerWidth < 600;
+          var rawWidth = container.clientWidth - 24;
+          var containerWidth = isMobile ? rawWidth : Math.min(rawWidth, 720);
+          var scale = isMobile ? 2.2 : Math.min(containerWidth / defaultVp.width, 1.0);
+          var vp = page.getViewport({ scale: scale });
+          var canvas = document.createElement('canvas');
+          canvas.width = vp.width;
+          canvas.height = vp.height;
+          canvas.style.width = '100%';
+          canvas.style.borderRadius = '6px';
+          canvas.style.display = 'block';
+          canvas.style.opacity = '0';
+          canvas.style.transition = 'opacity 180ms ease-in';
+          container.appendChild(canvas);
+          page.render({ canvasContext: canvas.getContext('2d'), viewport: vp }).promise.then(function() {
+            canvas.style.opacity = '1';
+          });
+        });
+      })(p);
+    }
+  }).catch(function(e) {
+    pdfRenderedState[containerId] = false;
+    container.innerHTML = '<p style="color:#c0392b;text-align:center;margin-top:40px;padding:0 16px;">Gre\u0161ka pri u\u010ditavanju PDF-a. Proverite internet konekciju i poku\u0161ajte ponovo.</p>';
+  });
+}
+
+function openPdfModal() {
+  document.getElementById('pdf-modal').style.display = 'flex';
+  renderPdfInto('pdf-container', 'laboratorijski-izvestaj.pdf');
+}
+
+function openPdfModal2() {
+  document.getElementById('pdf-modal-2').style.display = 'flex';
+  renderPdfInto('pdf-container-2', 'zdravstvena-ispravnost.pdf');
+}
+</script>
+
+<script>
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  // Update buttons
+  document.getElementById('btn-sr').classList.toggle('active', lang === 'sr');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-sr').setAttribute('aria-pressed', lang === 'sr');
+  document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
+
+  // Update all elements with data-sr / data-en
+  document.querySelectorAll('[data-sr]').forEach(el => {
+    const txt = lang === 'en' ? el.dataset.en : el.dataset.sr;
+    if (!txt) return;
+    // Preserve inner HTML for h1 (has <em> and <br/>)
+    if (el.tagName === 'H1') {
+      if (lang === 'en') {
+        el.innerHTML = 'Your phone<br/>emits <em>more</em><br/>than you think.';
+      } else {
+        el.innerHTML = 'Tvoj telefon<br/>emituje <em>više</em><br/>nego što misliš.';
+      }
+    } else if (el.tagName === 'H2' && el.dataset.sr && el.dataset.sr.includes('Zaštita kojoj')) {
+      el.innerHTML = lang === 'en' ? 'Protection you<br/>can trust' : 'Zaštita kojoj<br/>možeš da veruješ';
+    } else if (el.tagName === 'H2' && el.dataset.sr && el.dataset.sr.includes('Zaštiti sebe')) {
+      el.innerHTML = lang === 'en' ? 'Protect yourself and<br/>your family' : 'Zaštiti sebe i<br/>svoju porodicu';
+    } else if (el.tagName === 'H2' && el.dataset.sr && el.dataset.sr.includes('Laboratorijski')) {
+      el.innerHTML = lang === 'en' ? 'Laboratory confirmed<br/>effectiveness' : 'Laboratorijski<br/>potvrđena efikasnost';
+    } else if (el.tagName === 'H2' && el.dataset.sr && el.dataset.sr.includes('Elektromagnetno')) {
+      el.innerHTML = lang === 'en' ? 'Electromagnetic radiation<br/>is all around us' : 'Elektromagnetno zračenje<br/>je svuda oko nas';
+    } else {
+      el.textContent = txt;
+    }
+  });
+
+  // PDF modal label
+  const modal = document.getElementById('pdf-modal');
+  if (modal) modal.setAttribute('aria-label', lang === 'en' ? 'Laboratory report IOFH' : 'Laboratorijski izveštaj IOFH');
+
+  // Skip link
+  const skip = document.querySelector('.skip-link');
+  if (skip) skip.textContent = lang === 'en' ? 'Skip to content' : 'Preskoči na sadržaj';
+
+  // Nav aria-label
+  const nav = document.querySelector('nav[role="navigation"]');
+  if (nav) nav.setAttribute('aria-label', lang === 'en' ? 'Main navigation' : 'Glavna navigacija');
+
+  // Badges and sticker on phone mockup
+  var badgeSar = document.querySelector('.badge-sar');
+  if (badgeSar) badgeSar.innerHTML = lang === 'en'
+    ? '<span class="badge-icon">📡</span> Signal unchanged'
+    : '<span class="badge-icon">📡</span> Signal nepromenjen';
+
+  var badgeSignal = document.querySelector('.badge-signal');
+  if (badgeSignal) badgeSignal.innerHTML = lang === 'en'
+    ? '<span class="badge-icon">🛡️</span> Active protection'
+    : '<span class="badge-icon">🛡️</span> Aktivna zaštita';
+
+  var sticker = document.querySelector('.sticker');
+  if (sticker) sticker.innerHTML = lang === 'en'
+    ? '<strong>&gt;50%</strong><br/>SAR<br/>reduction'
+    : '<strong>&gt;50%</strong><br/>SAR<br/>redukcija';
+
+  localStorage.setItem('nhr-lang', lang);
+}
+
+// Restore saved language
+const savedLang = localStorage.getItem('nhr-lang');
+if (savedLang && savedLang !== 'sr') setLang(savedLang);
+</script>
+
+<!-- Vercel Analytics -->
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
